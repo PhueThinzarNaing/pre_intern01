@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+        <style>
+            input[type="text"]
+            {
+               background-color: darkblue;
+            }
+            input[type=number]
+            {
+              background-color: yellow;
+            }
+            input[type=password]
+            {
+                background-color: magenta;
+            }
+            button{
+                widows: 100px;
+                height: 40px;
+                background-color: rgb(90, 90, 128);
+                color:white;
+            }
+            button:hover{
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+
+            <div>
+                <input name="First name" type="text" placeholder="First Name"><br>
+                <input name="Last name"  type="text" placeholder="Last Name"><br>
+                <input name="name"  type="number" placeholder="Age"><br>
+                <input name="password"  type="password" placeholder="Password">
+            </div>
+              
+            <div>
+                Favorite Language?
+                <input name="Language" type="radio" value="java">java
+                <input name="Language" type="radio" value="php">php
+                <input name="Language" type="radio" value="python">python
+                <input name="language" type="radio" value="C#">C#
+            </div>
+            <div>
+                <input list="countries" name="country" placeholder="countries">
+                <datalist id="countries">
+                        <option value="Americam">
+                        <option value="Myanmar">
+                        <option value="Japan">
+                        <option value="Korean">
+                        <option value="Thai">
+                        <option value="China">
+                </datalist>
+            </div>
+            
+            <div>
+                <button>Submit</button>
+                <button>Cancel</button>
+            </div>
+
+        </form>
+    </body>
+</html>
